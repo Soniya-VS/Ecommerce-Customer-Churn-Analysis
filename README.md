@@ -1,63 +1,62 @@
 # E-Commerce Customer Churn Patterns and Customer Retention Analysis
 
-**Exploring customer churn patterns to support data-driven insights into customer behavior, business performance, and retention strategies.**
+Exploring customer churn patterns to understand customer behaviour, purchasing activity, satisfaction, and retention-related indicators in e-commerce.
 
 ## Project Overview
 
-Customer retention is important for the long-term growth of e-commerce businesses. When customers stop purchasing products or discontinue their relationship with a business, it can affect revenue, customer lifetime value, and business performance.
+Customer retention is important for the long-term growth of e-commerce businesses. When customers stop purchasing products or discontinue their relationship with a business, it can affect revenue, customer lifetime value, and overall business performance.
 
-This project explores e-commerce customer data to understand **patterns associated with customer churn and retention**.
+This project analyses an e-commerce customer churn dataset to explore patterns associated with customer churn and retention.
 
-Using the E-Commerce Customer Churn Dataset, the project aims to identify patterns across customer segments, purchasing behavior, satisfaction levels, marketing engagement, and customer retention activities.
+The analysis focuses on customer segments, purchasing behaviour, satisfaction levels, marketing engagement, customer value, and retention-related indicators.
 
-The goal is to transform customer data into meaningful analytical insights that can support further investigation into customer behavior and retention opportunities.
+The objective is to transform customer data into meaningful insights that can support data-driven discussions about customer behaviour and retention opportunities.
 
 ## Business Problem
 
-Customer churn can affect sales, revenue, and long-term business growth. Understanding which customer groups and behaviors are associated with churn may help businesses identify areas that deserve closer attention.
+Customer churn can affect sales, revenue, and long-term business growth. Understanding which customer characteristics and behaviours are associated with churn may help businesses identify areas that deserve closer attention.
 
 This project addresses the following question:
 
-**What patterns in customer characteristics, purchasing behavior, satisfaction, and engagement are associated with customer churn in e-commerce?**
+**What patterns in customer characteristics, purchasing behaviour, satisfaction, and engagement are associated with customer churn in e-commerce?**
 
-The analysis will explore these relationships while recognizing that observed associations do not necessarily establish the causes of customer churn or prove the effectiveness of retention strategies.
+The analysis explores these relationships while recognizing that observed associations do not necessarily establish the causes of customer churn or prove the effectiveness of retention strategies.
 
 ## Project Objectives
 
 * Examine the distribution of churned and non-churned customers.
 * Explore churn patterns across different customer segments.
-* Investigate relationships between purchasing behavior and churn.
+* Investigate relationships between purchasing behaviour and churn.
 * Examine how customer satisfaction and support interactions relate to churn.
-* Analyze customer engagement and marketing-related patterns.
+* Analyse customer engagement and marketing-related patterns.
 * Explore customer value and retention-related indicators.
-* Develop clear visualizations to communicate analytical findings.
+* Develop visualizations to communicate analytical findings.
 * Identify patterns that may support data-driven customer retention decisions.
 
 ## Dataset Information
 
-| Attribute           | Details                                                |
-| ------------------- | ------------------------------------------------------ |
-| Dataset             | E-Commerce Customer Churn Dataset                      |
-| Source              | Kaggle                                                 |
-| File format         | CSV                                                    |
-| Number of records   | 50,000                                                 |
-| Number of columns   | 48                                                     |
-| Unit of observation | Churn tracking record, subject to dataset verification |
-| Domain              | E-Commerce Analytics                                   |
+| Attribute        | Details                           |
+| ---------------- | --------------------------------- |
+| Dataset          | E-Commerce Customer Churn Dataset |
+| Source           | Kaggle                            |
+| File format      | CSV                               |
+| Original records | 50,000                            |
+| Original columns | 48                                |
+| Domain           | E-Commerce Analytics              |
 
 **Dataset source:** [Kaggle – E-Commerce Customer Churn Dataset](https://www.kaggle.com/datasets/datascikhan/e-commerce-customer-churn-2026)
 
-The dataset contains 50,000 records and 48 columns related to customer information, churn status, purchasing behavior, satisfaction, marketing engagement, customer value, and retention activities.
+The dataset contains information related to customer identifiers, churn status, purchasing behaviour, satisfaction, marketing engagement, customer value, and retention activities.
 
-### Key Fields
+### Important Variables
 
-Some of the fields relevant to this project include:
+Some of the important variables used in the project include:
 
 * `customer_id` – Customer identifier.
-* `customer_segment` – Business classification of the customer.
+* `churn_id` – Churn tracking record identifier.
+* `customer_segment` – Customer classification.
 * `is_churned` – Indicator showing whether a customer has churned.
-* `churn_flag` – Numeric representation of churn status.
-* `subscription_type` – Customer subscription or membership type.
+* `subscription_type` – Customer subscription type.
 * `total_spend_usd` – Total customer spending.
 * `avg_order_value_usd` – Average order value.
 * `num_purchases` – Number of purchases.
@@ -67,54 +66,49 @@ Some of the fields relevant to this project include:
 * `customer_lifetime_value_usd` – Customer lifetime value estimate.
 * `engagement_level` – Customer engagement classification.
 * `marketing_emails_opened` – Number of marketing emails opened.
-* `customer_health_score` – Composite customer health score.
+* `customer_health_score` – Customer health score.
 * `churn_risk_category` – Customer churn risk classification.
 * `retention_probability` – Estimated likelihood of customer retention.
 
-The actual definitions, data types, and suitability of these variables will be examined before detailed analysis. Precomputed predictions and risk scores will be reviewed carefully to understand their meaning and limitations.
+Precomputed predictions and risk-related variables will be examined carefully before being considered in further analysis.
 
 ## Tools and Technologies
 
-* **Python** – Data analysis.
-* **Pandas** – Dataset loading, inspection, and tabular analysis.
-* **NumPy** – Numerical operations.
-* **Matplotlib** – Data visualization.
-* **Jupyter Notebook** – Interactive analysis and documentation.
-* **GitHub** – Version control and project presentation.
+* Python – Data analysis and preprocessing.
+* Pandas – Data manipulation and analysis.
+* NumPy – Numerical operations.
+* Matplotlib – Data visualization.
+* Jupyter Notebook – Interactive analysis.
+* GitHub – Project documentation and version control.
 
 ## Project Workflow
 
-The project will follow a structured data analysis workflow:
+The project follows a structured data analysis workflow.
 
-1. **Understand the data:** Load the dataset and inspect its dimensions, column names, data types, and sample records.
-2. **Assess data quality:** Examine missing values, duplicate records, inconsistent values, and potential data quality issues.
-3. **Prepare the data:** Investigate missing values and prepare relevant variables for analysis.
-4. **Explore churn patterns:** Examine the distribution of churn status and compare customer groups.
-5. **Analyze customer behavior:** Explore relationships involving purchasing activity, satisfaction, support interactions, and engagement.
-6. **Visualize insights:** Create suitable charts and summaries to communicate the findings.
-7. **Interpret findings:** Discuss the observed patterns, their business relevance, and the limitations of the analysis.
+1. Project understanding and problem definition.
+2. Initial dataset inspection.
+3. Data quality assessment.
+4. Data preprocessing and cleaning.
+5. Exploratory Data Analysis (EDA).
+6. Customer churn pattern analysis.
+7. Data visualization.
+8. Interpretation of findings and business insights.
 
-## Planned Analysis
+## Phase 1 – Project Proposal and Initial Dataset Inspection
 
-The main areas of investigation are:
+Phase 1 focused on defining the project scope, understanding the business problem, identifying project objectives, and inspecting the original dataset.
 
-| Analysis Area           | Key Questions                                                                                            |
-| ----------------------- | -------------------------------------------------------------------------------------------------------- |
-| Customer churn patterns | How are customers distributed across churn statuses?                                                     |
-| Customer segmentation   | How do churn patterns differ across customer segments and subscription types?                            |
-| Purchasing behavior     | How are purchase frequency, spending, and order value associated with churn?                             |
-| Customer satisfaction   | How do satisfaction scores and feedback relate to churn patterns?                                        |
-| Customer support        | What patterns appear across support tickets, interactions, and support channels?                         |
-| Marketing engagement    | How do email engagement, marketing conversions, and social media engagement vary across customer groups? |
-| Customer value          | How do customer lifetime value and customer value categories relate to churn?                            |
-| Retention indicators    | What patterns appear in retention-related variables and customer health indicators?                      |
-| Data visualization      | How can the findings be communicated clearly to support business decisions?                              |
+Initial inspection findings:
 
-## Initial Dataset Inspection
+| Description          |    Result |
+| -------------------- | --------: |
+| Total records        |    50,000 |
+| Total columns        |        48 |
+| Total data elements  | 2,400,000 |
+| Duplicate rows       |         0 |
+| Total missing values |    65,020 |
 
-During the initial inspection, the dataset was confirmed to contain **50,000 records and 48 columns**, representing 2,400,000 data elements.
-
-The following missing values were identified:
+Missing values were identified in three columns:
 
 | Column                    | Missing Values |
 | ------------------------- | -------------: |
@@ -123,62 +117,99 @@ The following missing values were identified:
 | `social_media_engagement` |         15,004 |
 | **Total**                 |     **65,020** |
 
-No duplicate rows were detected during the initial inspection.
+These missing values were investigated during the preprocessing phase rather than being automatically replaced.
 
-The missing values represent approximately 1.35% of all data elements. However, missingness is concentrated in three columns. Their possible causes and appropriate handling methods will be investigated during data preparation rather than automatically replacing the missing values.
+## Phase 2 – Data Preprocessing and Cleaning
 
-## Expected Business Value
+Phase 2 focused on examining and improving the quality of the dataset before performing exploratory analysis.
 
-The project aims to demonstrate how e-commerce customer data can be used to:
+The following activities were completed:
 
-* Identify customer groups with different churn patterns.
-* Understand relationships between purchasing behavior and customer churn.
-* Examine how satisfaction and engagement vary across customer groups.
-* Explore customer value and retention-related indicators.
-* Communicate analytical findings through clear visualizations.
-* Support evidence-based discussions about customer retention opportunities.
+### 1. Missing Value Investigation and Treatment
 
-These are intended applications of the analysis, not claims that the dataset alone can establish the causes of churn or demonstrate that a particular retention strategy is effective.
+* Investigated missing values in `subscription_type`, `prevention_method`, and `social_media_engagement`.
+* Examined category distributions and relationships with churn-related variables.
+* Replaced missing values in these three categorical columns with `Unknown` because their actual meanings could not be established from the available data.
+* Converted `Not Applicable` entries in `churn_date` into `NaT`.
+* Verified that the missing churn dates corresponded to non-churned records.
 
-## Repository Structure
+The remaining missing values in `churn_date` were retained because a churn date is not applicable to customers who have not churned.
 
-The repository will be organized as follows:
+### 2. Duplicate and Identifier Checks
 
-```text
-Ecommerce-Customer-Churn-Analysis/
-│
-├── data/
-│   └── dataset.csv
-│
-├── Ecommerce_Customer_Churn_Phase1.ipynb
-│
-├── Ecommerce_Customer_Churn_SRS.docx
-│
-└── README.md
-```
+* Identified 50,000 total records.
+* Found 31,644 unique customer IDs.
+* Identified 18,356 records associated with repeated customer IDs.
+* Verified that all 50,000 `churn_id` values were unique.
+* Confirmed that no exact duplicate rows were present.
 
-* `data/dataset.csv` – Dataset used for the project.
-* `Ecommerce_Customer_Churn_Phase1.ipynb` – Project overview, business problem, objectives, dataset inspection, and planned analysis.
-* `Ecommerce_Customer_Churn_SRS.docx` – Software Requirements Specification documenting project requirements.
-* `README.md` – Project overview and documentation.
+Repeated customer IDs were retained because they represented multiple records rather than exact duplicate observations.
 
-## Scope and Limitations
+### 3. Data Consistency Checks
 
-* The analysis depends on the accuracy and completeness of the available dataset.
-* Missing values may affect particular analyses and must be investigated before treatment.
-* The meaning and consistency of churn-related variables must be verified.
-* Multiple records may relate to the same customer; this must be checked before interpreting record-level results as customer-level results.
-* Precomputed churn predictions and risk scores may depend on methods or assumptions that are not documented in the dataset.
-* Observed associations do not establish causation.
-* The effectiveness of retention strategies cannot be established solely from descriptive patterns without an appropriate evaluation design.
-* Findings may not generalize to all e-commerce businesses.
+Checked numerical and categorical variables for unusual or inconsistent values.
 
-## Project Status
+The following checks were performed:
 
-**Phase 1 – Project Proposal and Initial Dataset Inspection**
+* Negative values in numerical columns.
+* Marketing emails opened exceeding emails sent.
+* Marketing emails clicked exceeding emails sent.
+* Zero purchases with positive average order value.
+* Zero purchases with positive total spending.
 
-The project scope, business problem, objectives, dataset requirements, and planned analysis have been defined. The dataset has been loaded and its initial structure inspected.
+A total of 1,041 records had zero purchases despite having positive total spending.
 
-The initial inspection identified 50,000 records, 48 columns, 65,020 missing values across three columns, and no duplicate rows.
+Since the reason for this inconsistency could not be established from the available dataset information, the original values were retained without modification.
 
-Further investigation of data quality, missing values, variable definitions, and churn patterns will be carried out in subsequent phases.
+### 4. Redundant and Constant Column Removal
+
+The following five columns were removed after investigating their relationships with other variables:
+
+* `churn_flag`
+* `churn_risk_score`
+* `satisfaction_level`
+* `customer_health_category`
+* `dataset_year`
+
+These columns were removed because they were redundant, derived from other variables, or contained constant values.
+
+The dataset was reduced from 48 to 43 columns.
+
+### 5. Outlier Investigation
+
+The Interquartile Range (IQR) method was used to identify potential outliers in numerical variables.
+
+Potential outliers were identified in:
+
+* `avg_order_value_usd`
+* `days_since_last_purchase`
+* `support_interactions`
+* `marketing_emails_opened`
+* `marketing_emails_clicked`
+* `churn_revenue_impact_usd`
+* `customer_health_score`
+
+These values were investigated using descriptive statistics and percentile distributions.
+
+The identified values were retained because they could represent genuine customer behaviour. No automatic deletion or capping was performed.
+
+### 6. Final Dataset Validation
+
+The cleaned dataset was validated after preprocessing.
+
+| Validation               | Result |
+| ------------------------ | -----: |
+| Final records            | 50,000 |
+| Final columns            |     43 |
+| Duplicate rows           |      0 |
+| Unique churn IDs         | 50,000 |
+| Remaining missing values | 29,347 |
+
+The remaining missing values are expected `NaT` entries in `churn_date` for non-churned records.
+
+The cleaned dataset was saved separately for subsequent analysis.
+
+## Planned Analysis – Phase 3
+
+The next phase will focus on Exploratory Data Analysis (EDA).
+
