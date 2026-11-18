@@ -209,7 +209,124 @@ The remaining missing values are expected `NaT` entries in `churn_date` for non-
 
 The cleaned dataset was saved separately for subsequent analysis.
 
-## Planned Analysis – Phase 3
+# Phase 3: Exploratory Data Analysis (EDA)
 
-The next phase will focus on Exploratory Data Analysis (EDA).
+## Project Overview
+
+This phase focuses on performing Exploratory Data Analysis (EDA) on the cleaned e-commerce customer churn dataset to understand customer behaviour, identify patterns, and explore factors associated with customer churn.
+
+The analysis uses univariate, bivariate, and multivariate techniques to examine customer characteristics, purchasing behaviour, subscription patterns, customer engagement, and support interactions.
+
+## Objectives
+
+- Understand the distribution of customer characteristics and behavioural variables.
+- Examine the distribution of churned and non-churned customers.
+- Identify relationships between customer attributes and churn status.
+- Explore the combined effects of multiple variables on customer churn.
+- Identify important patterns and insights that may support customer retention strategies.
+
+## Dataset Information
+
+- Dataset: E-Commerce Customer Churn Dataset
+- Source: Kaggle
+- Total Records: 50,000
+- Number of Columns: 43
+- Input File: `cleaned_customer_churn.csv`
+
+The cleaned dataset prepared during Phase 2 was used for this analysis.
+
+## Tools and Technologies
+
+- Python
+- Jupyter Notebook
+- Pandas – Data manipulation and analysis
+- NumPy – Numerical operations
+- Matplotlib – Data visualization
+- Seaborn – Statistical data visualization
+
+## Analysis Performed
+
+### 1. Univariate Analysis
+
+Univariate analysis was performed to examine individual variables and understand their distributions and frequency patterns.
+
+The analysis covered:
+
+- Customer churn status
+- Customer segment
+- Subscription type
+- Purchase frequency
+- Total spending
+- Average order value
+- Purchase recency
+- Support interactions
+- Marketing email opens
+- Social media engagement
+- Churn category
+- Churn reason
+- Churn prevention methods
+
+### 2. Bivariate Analysis
+
+Bivariate analysis was performed to examine the relationship between individual customer-related variables and churn status.
+
+The following relationships were explored:
+
+- Customer Segment vs Churn Status
+- Subscription Type vs Churn Status
+- Purchase Frequency vs Churn Status
+- Total Spending vs Churn Status
+- Average Order Value vs Churn Status
+- Purchase Recency vs Churn Status
+- Support Interactions vs Churn Status
+- Social Media Engagement vs Churn Status
+
+### 3. Multivariate Analysis
+
+Multivariate analysis was performed to understand how multiple variables interact with customer churn.
+
+The following analyses were carried out:
+
+- Customer Segment vs Subscription Type vs Churn Status
+- Purchase Frequency vs Total Spending vs Churn Status
+- Support Interactions vs Purchase Recency vs Churn Status
+- Correlation Analysis of Numerical Variables
+
+## Key Findings
+
+- The dataset contains 50,000 customer records, with 41.31% churned customers and 58.69% non-churned customers.
+- Consumer customers recorded the highest churn rate (43.64%) among the customer segments.
+- Churn rates across recorded subscription types were relatively similar.
+- Purchase frequency and total spending showed very small differences between churned and non-churned customers.
+- Churned customers had a higher average purchase recency (106.98 days) than non-churned customers (93.82 days).
+- Churned customers also had more support interactions on average (7.25) compared with non-churned customers (6.32).
+- Poor Customer Service was the most frequently reported churn reason.
+- The combined analysis of support interactions and purchase recency showed generally higher churn percentages among customers with more support interactions and longer purchase gaps.
+- Total spending and customer lifetime value showed a strong positive correlation of 0.96.
+
+## Visualizations
+
+The analysis includes appropriate visualizations such as:
+
+- Count plots
+- Histograms
+- Box plots
+- Bar charts
+- Heatmaps
+- Scatter plots
+- Correlation heatmaps
+
+These visualizations were used to identify distributions, compare customer groups, and explore relationships among variables.
+
+## Conclusion
+
+The exploratory data analysis provided insights into customer behaviour and churn patterns in the e-commerce dataset.
+
+Purchase recency and support interactions showed noticeable differences between churned and non-churned customers. Consumer customers also recorded a comparatively higher churn rate. In contrast, purchase frequency, total spending, average order value, subscription type, and social media engagement showed relatively small differences between the two churn groups.
+
+The findings provide a foundation for further statistical analysis and predictive modelling to understand customer churn and support customer retention strategies.
+
+## Project Status
+
+Phase 3: Exploratory Data Analysis – Completed.
 
